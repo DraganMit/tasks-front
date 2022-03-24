@@ -1,12 +1,19 @@
 {
   "name": "tasks-front",
   "version": "0.0.0",
+  “engines”: { 
+    “node”: “17.7.2”, 
+    “npm”: “8.5.5” 
+  },
+
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start" : "node server.js"
+    “heroku-postbuild”: “ng build — prod”,
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+    
   },
   "private": true,
   "dependencies": {
